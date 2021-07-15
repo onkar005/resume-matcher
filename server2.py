@@ -36,8 +36,6 @@ def realhome():
 
 
 @app.route('/jdres/',methods=['GET','POST'])
-
-def home():
 	#getting initial count of resumes checked
 	initial_count = read_excel(count_excel_path,'Sheet1','A1')
 	df_for_excel = pd.DataFrame(None)
