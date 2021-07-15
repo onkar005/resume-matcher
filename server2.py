@@ -30,7 +30,6 @@ df_for_excel = pd.DataFrame(None)
 
 count_excel_path = 'count.xlsx'
 
-@app.route('/',methods=['GET','POST'])
 @app.route('/home/',methods=['GET','POST'])
 def realhome():
 	return render_template('tool_home.html')
